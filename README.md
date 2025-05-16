@@ -101,13 +101,9 @@ Diagramme réalisé avec PlantUML :
 
 ### Entités principales :
 
-- **Client** : id, nom, email, téléphone
-- **Devis** : id, date, client_id, total
-- **Facture** : id, date, devis_id, statut, total
-- **Produit/Service** : id, nom, prix, description
-- **Ligne_devis / Ligne_facture** : id, id_devis/facture, id_produit, quantité, prix
-
+- **Client** : id, name, siret, adresse, code_postale, telephone, mail, isProfessionnel, createdAt, updatedAt
+- **Devis** : id, numero_devis, date, client_id, montant_total, montant_ht, tva, montant_facture, montant_restant, active, service_id, createdAt, updatedAt
+- **Facture** : id, numero_facture, date, devis_id, client_id, statut, montant, montant_ht, montant_paye, montant_restant, tva, createdAt, updatedAt
+- **Service/Produits** : id, description, prix_unitaire, createdAt, updatedAt
+- **User** : id, login, password
 ![MCD](./Merise/MLD.png)
-
-
-
