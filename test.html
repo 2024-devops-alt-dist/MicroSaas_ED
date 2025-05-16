@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Wireframe 1 : Dashboard -->
+<div style="display: flex; height: 100vh; font-family: sans-serif;">
+    <aside style="width: 200px; background: #f0f0f0; padding: 20px;">
+        <h2>TikTakFacture</h2>
+        <nav>
+            <p>Dashboard</p>
+            <p>Clients</p>
+            <p>Devis</p>
+            <p>Factures</p>
+        </nav>
+    </aside>
+    <main style="flex-grow: 1; padding: 20px;">
+        <header style="height: 60px; background: #e6e6e6; margin-bottom: 20px; padding: 10px;">Top Bar</header>
+        <section style="display: flex; gap: 20px; margin-bottom: 20px;">
+            <div style="flex: 1; background: #fff; border: 1px solid #ccc; padding: 10px;">Total Invoices</div>
+            <div style="flex: 1; background: #fff; border: 1px solid #ccc; padding: 10px;">Pending Payments</div>
+        </section>
+        <section style="background: #fff; border: 1px solid #ccc; padding: 10px;">
+            <h3>Recent Invoices</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                <tr>
+                    <th style="border-bottom: 1px solid #ccc;">Client</th>
+                    <th style="border-bottom: 1px solid #ccc;">Amount</th>
+                    <th style="border-bottom: 1px solid #ccc;">Status</th>
+                    <th style="border-bottom: 1px solid #ccc;">Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+                <tr><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+<!-- Wireframe 2 : Formulaire de création de devis -->
+<div style="font-family: sans-serif; margin-top: 50px;">
+    <h2>Créer un Devis</h2>
+    <form style="max-width: 600px; display: flex; flex-direction: column; gap: 15px;">
+        <label>Client: <input type="text" placeholder="Nom du client" style="width: 100%;"></label>
+        <label>Date: <input type="date" style="width: 100%;"></label>
+        <label>Description: <textarea placeholder="Détail du devis" style="width: 100%;"></textarea></label>
+        <label>Montant: <input type="number" placeholder="0.00 €" style="width: 100%;"></label>
+        <button type="submit" style="padding: 10px; background: teal; color: white; border: none;">Créer le devis</button>
+    </form>
+</div>
+
+<!-- Wireframe 3 : Liste des devis -->
+<div style="font-family: sans-serif; margin-top: 50px;">
+    <h2>Liste des Devis</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+        <tr>
+            <th style="border-bottom: 1px solid #ccc;">#</th>
+            <th style="border-bottom: 1px solid #ccc;">Client</th>
+            <th style="border-bottom: 1px solid #ccc;">Date</th>
+            <th style="border-bottom: 1px solid #ccc;">Montant</th>
+            <th style="border-bottom: 1px solid #ccc;">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>001</td><td>Client A</td><td>2025-05-15</td><td>300 €</td><td><button>Voir</button></td></tr>
+        <tr><td>002</td><td>Client B</td><td>2025-05-14</td><td>450 €</td><td><button>Voir</button></td></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
