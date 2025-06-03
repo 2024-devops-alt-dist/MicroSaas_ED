@@ -123,10 +123,10 @@ L’interface de **TikTakFacture** a été pensée pour être à la fois ergonom
 ### 📱 Maquettes mobile
 
 Des versions **mobile-first** ont été pensées pour :
-- Le **dashboard**
+- La **Modal update client**
 - La **page de connexion**
 - La **liste des clients**
-- Le **formulaire de création de devis**
+- La **liste des services**
 
 ### 🔗 Prototypage interactif
 
